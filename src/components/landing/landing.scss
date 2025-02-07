@@ -1,0 +1,96 @@
+$first: #000;
+$second: #3f3f3f;
+$third: #FFC107;
+$text: #f8f8f8;
+
+body.light{
+  $second: #c2c2c2;
+  $text: #222;
+  $first: #fff;
+}
+body.dark{
+  $text: #f8f8f8;
+  $first: #000;
+  $second: #3f3f3f;
+}
+.down {
+  bottom: 30px;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  span {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $text;
+    animation: down 1.5s ease-out 2s infinite;
+  }
+}
+@keyframes down {
+  0%{
+    opacity: 0;
+    top: 10%;
+  }
+  50%{
+    opacity: 1;
+    top: 50%;
+  }
+  100%{
+    opacity: 0;
+    top: 90%;
+  }
+  
+}
+.header {
+  height: 100vh;
+}
+@media (max-width: 991.5px) {
+  .header {
+    width: 100%;
+    &-wrap {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 768.5px) {
+  .header {
+    &-wrap {
+      order: 2;
+    }
+  }
+}
+@media (max-width: 538.5px) {
+  .header-wrap {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (max-width: 425.5px) {
+  .header-wrap {
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

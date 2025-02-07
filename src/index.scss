@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Rubik:wght@500&display=swap");
+$first: #000;
+$second: #3f3f3f;
+$third: #ffc107;
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+::-moz-selection {
+  color: #222;
+  background: #ffc107;
+}
+::selection {
+  color: #222;
+  background: #ffc107;
+}
+body.light {
+  $second: #c2c2c2;
+  color: #222;
+  $first: #fff;
+}
+body.dark {
+  $first: #000;
+  color: #e4e4e4;
+  $second: #3f3f3f;
+}
+body {
+  background: $first;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  color: #cacaca;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+main,
+footer,
+header,
+nav {
+  transition: 0.5s;
+  left: 0;
+  position: relative;
+}
+.cont {
+  max-width: 1920px !important;
+  margin: auto !important;
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+@media (max-width: 1280.5px) {
+  .cont {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+@media (max-width: 991.5px) {
+  .cont {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+@media (max-width: 768.5px) {
+  .cont {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+@media (max-width: 425.5px) {
+  .cont {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+@media (max-width: 300.5px) {
+  .cont {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}

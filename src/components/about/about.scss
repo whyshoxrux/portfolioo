@@ -1,0 +1,17 @@
+@media (max-width: 991.5px) {
+  .about-wrap{
+    width: 100% !important;
+  }  
+  .about-description p{
+    width: 75% !important;
+  }
+}
+@media (max-width: 400.5px) {
+  .about-description p{
+    width: 100% !important;
+  }
+  .skill{
+    padding: 5px 15px !important;
+    margin: 0 7px 7px 0 !important;
+  }
+}
